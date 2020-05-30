@@ -38,7 +38,7 @@ const StyledSidenav = styled.div`
         transition: all 0.25s ease;
         letter-spacing: 2px;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 0.8em;
     }
 
     li a:hover {
@@ -64,23 +64,23 @@ const StyledSidenav = styled.div`
     }
 
     .avatar {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
         background: ${props => props.theme.darkLight};
         color: #fff;
         font-weight: 600;
-        font-size: 48px;
-        padding-top: 8px;
+        font-size: 40px;
+        padding-top: 6px;
         text-align: center;
-
         margin-bottom: 20px;
     }
 
     .user-info {
         text-align: center;
+        font-size: 0.9em;
     }
 
 `;

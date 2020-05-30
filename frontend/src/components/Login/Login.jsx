@@ -17,14 +17,12 @@ import './Login.scss';
 
 const GlobalStyle = createGlobalStyle`
     body {
-        ${'' /* background-image: url(${backgroundLogin}); */}
+        background-image: url(${backgroundLogin});
 
-        background-image: linear-gradient(to bottom, #ece9e6, #ffffff);
-
+        ${'' /* background-image: linear-gradient(to bottom, #ece9e6, #ffffff); */}
 
         font-family: 'Montserrat', sans-serif;
         color: #fff;
-
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
@@ -110,8 +108,6 @@ const Login = (props) => {
     const onSubmit = e => {
         e.preventDefault();
 
-        console.log('im here');
-
         if(email === '' || password === '') {
             setAlert('Por favor, Preencha todos os campos', 'danger');
         } else {
@@ -164,7 +160,6 @@ const Login = (props) => {
                                 <a className="forgot-pass" href="#!">Esqueci a senha</a>
                             </div>
                         </div>
-
                         <div className="center-button">
                             <Button 
                                 backColor="#F0F0F0" 
@@ -174,9 +169,7 @@ const Login = (props) => {
                         </div>
                     </form>
                 </Content>
-                
                 <Footer />
-               
             </Container>
         </React.Fragment>
     );

@@ -11,19 +11,17 @@ const StyledButtonTile = styled.div`
     border: 2px solid ${props => props.backColor};
     box-shadow: 0 7px 6px -6px #B2B2B2;
 
-    font-size: 1em;
-    padding: 14px 4px 0 4px;
+    font-size: 0.9em;
+    padding: 10px 2px 2px 2px;
 
     text-transform: uppercase;
     transition: all 0.2s linear;
 
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 
-
     color: ${props => props.backColor};
-    width: 110px;
-
+    width: 100px;
 
     i {
         font-size: 1.5em;

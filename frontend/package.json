@@ -1,12 +1,13 @@
 {
-  "name": "contact-keeper-client",
-  "version": "0.1.0",
+  "name": "netcorp-frontend",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "axios": "^0.19.1",
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
+    "react-calendar": "^3.0.0",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",

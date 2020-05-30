@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 const StyledCard = styled.div`
 
-    width: 300px;
+    width: 280px;
     height: 180px;    
 
     font-size: 13px;
 
     box-shadow: 0 8px 6px -6px #B2B2B2;
     
-    margin: 20px 20px;
+    margin: 20px 30px;
 
     .header {
         height: 140px;

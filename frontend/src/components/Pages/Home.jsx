@@ -1,15 +1,10 @@
 import React, { useContext, useEffect, Fragment } from 'react';
-import Contacts from '../Contact/Contact';
-import ContactForm from '../Contact/ContactForm';
-import ContactFilter from '../Contact/ContactFilter';
 import AuthContext from '../../context/auth/auth.context';
 import styled, { createGlobalStyle } from 'styled-components';
 
 import Post from './../Post/Post';
 import Sidenav from './../Sidenav/Sidenav';
-import ButtonTile from './../Shared/ButtonTile';
-
-import Card from './../Shared/Card';
+import FixedCards from './../FixedCards/FixedCards';
 
 import Footer from './../Shared/Footer';
 
@@ -48,10 +43,6 @@ const Home = () => {
                         nibh vitae lacinia. In eros nunc, scelerisque non tincidunt porttitor, viverra laoreet lectus.                   
                         `;
 
-    const onClick = () => {
-        console.log('algo aqui');
-    }
-
     const onLogout = () => {
         logout();
     }
@@ -73,33 +64,7 @@ const Home = () => {
                         <Post
                             title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
                             content={textoPost}
-                            footer="Hélio 2020.02.26 16:00:00"
-                            tags="DAYCORP"
-                            tagColor="#464646"
-                            icon="fa fa-birthday-cake"
-                        />
-                        <div className="container-test">
-                            <Post
-                                title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
-                                content={textoPost}
-                                footer="Hélio 2020.02.26 16:00:00"
-                                tags="SEXTOU"
-                                tagColor="#464646"
-                                icon="fa fa-glass"
-                            />
-                            <Post
-                                title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
-                                content={textoPost}
-                                footer="Hélio 2020.02.26 16:00:00"
-                                tags="SPAM"
-                                tagColor="#464646"
-                                icon="fa fa-asterisk"
-                            />
-                        </div>
-                        <Post
-                            title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
-                            content={textoPost}
-                            footer="Hélio 2020.02.26 16:00:00"
+                            footer="autor: Hélio"
                             tags="DAYCORP"
                             tagColor="#464646"
                             icon="fa fa-birthday-cake"
@@ -107,7 +72,15 @@ const Home = () => {
                         <Post
                             title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
                             content={textoPost}
-                            footer="Hélio 2020.02.26 16:00:00"
+                            footer="autor: Hélio"
+                            tags="SEXTOU"
+                            tagColor="#464646"
+                            icon="fa fa-glass"
+                        />
+                        <Post
+                            title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+                            content={textoPost}
+                            footer="autor: Hélio"
                             tags="SPAM"
                             tagColor="#464646"
                             icon="fa fa-asterisk"
@@ -115,7 +88,15 @@ const Home = () => {
                         <Post
                             title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
                             content={textoPost}
-                            footer="Hélio 2020.02.26 16:00:00"
+                            footer="autor: Hélio"
+                            tags="DAYCORP"
+                            tagColor="#464646"
+                            icon="fa fa-birthday-cake"
+                        />
+                        <Post
+                            title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+                            content={textoPost}
+                            footer="autor: Hélio"
                             tags="SPAM"
                             tagColor="#464646"
                             icon="fa fa-asterisk"
@@ -123,77 +104,27 @@ const Home = () => {
                         <Post
                             title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
                             content={textoPost}
-                            footer="Hélio 2020.02.26 16:00:00"
+                            footer="autor: Hélio"
                             tags="SPAM"
                             tagColor="#464646"
                             icon="fa fa-asterisk"
                         />
+                        <Post
+                            title="A QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+                            content={textoPost}
+                            footer="autor: Hélio"
+                            tags="SPAM"
+                            tagColor="#464646"
+                            icon="fa fa-asterisk"
+                        />
+                        
                         <div className="mock-footer">
                             2020 | &copy; ConferenciaCorp - Todos os direitos reservados
                         </div>
                     </div>
                 </div>
-                <div className="fixed-cards">
 
-                    <div className="action-container">
-                        <ButtonTile 
-                            backColor="#464646" 
-                            fontColor="#f0f0f0"
-                            text="Post" 
-                            icon="fas fa-plus-circle"
-                            onClick={onClick} />
-
-                        <ButtonTile 
-                            backColor="#464646" 
-                            fontColor="#f0f0f0"
-                            text="CAFÉ" 
-                            icon="fas fa-coffee"
-                            onClick={onClick} />   
-                        
-                        <ButtonTile 
-                            backColor="#464646" 
-                            fontColor="#f0f0f0"
-                            text="VOTAÇÃO" 
-                            icon="fas fa-vote-yea"
-                            onClick={onClick} /> 
-
-                        <ButtonTile 
-                            backColor="#464646" 
-                            fontColor="#f0f0f0"
-                            text="SUGESTÃO" 
-                            icon="fas fa-comment-alt"
-                            onClick={onClick} /> 
-
-                        <ButtonTile 
-                            backColor="#464646" 
-                            fontColor="#f0f0f0"
-                            text="EVENTO" 
-                            icon="fas fa-glass-cheers"
-                            onClick={onClick} /> 
-
-                        <ButtonTile 
-                            backColor="#464646" 
-                            fontColor="#f0f0f0"
-                            text="BUSCAR" 
-                            icon="fas fa-search"
-                            onClick={onClick} /> 
-                    </div>
-
-                    <Card 
-                        headerTitle="ANIVERSARIANTE DO MÊS" 
-                        headerColor="linear-gradient(to left, #f85032, #e73827)"
-                    />
-
-                    <Card 
-                        headerTitle="Próximos eventos" 
-                        headerColor="linear-gradient(to left, #f85032, #e73827)"
-                    />
-
-                    <Card 
-                        headerTitle="Próximos eventos" 
-                        headerColor="linear-gradient(to left, #f85032, #e73827)"
-                    />
-                </div>
+                <FixedCards />
             </div>
         </Fragment>
     )

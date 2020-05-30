@@ -1,0 +1,27 @@
+.fixed-cards {
+    flex-basis: 340px;
+    overflow: auto;
+
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.fixed-cards::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.action-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 30px 30px 20px 30px;
+
+    div {
+        flex: 0 0 30%;
+        margin-bottom: 5%; /* (100-30*3)/2 */
+    }
+}
