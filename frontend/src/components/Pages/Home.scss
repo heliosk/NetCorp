@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+
+    @media (min-width: 480px) {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+}
+
+.sidenav {
+    flex-basis: auto;
+    background-color: #cdcdcd;
+}
+
+.post-container {
+    flex: 1;
+    
+    p {
+        padding: 100px;
+    }
+
+    overflow: auto;
+}
+
+.post-elements {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fixed-cards {
+    
+    flex-basis: 340px;
+
+    overflow: auto;
+
+    
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.fixed-cards::-webkit-scrollbar { 
+    display: none; /* Safari and Chrome */
+}
+
+
+.post-container::-webkit-scrollbar-track
+{
+	background-color: #fff;
+}
+
+.post-container::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #adadad;
+}
+
+.post-container::-webkit-scrollbar-thumb
+{
+	background-color: #adadad;
+	border: none;
+}
+
+.container-test {
+    display: flex;
+}
+
+.action-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 30px 20px 20px 20px;
+
+    div {
+        flex: 0 32%;
+        height: 70px;
+        margin-bottom: 2%; /* (100-32*3)/2 */
+    }
+
+}
+
+.mock-footer {
+    text-align: center;
+    font-size: 0.9em;
+}
